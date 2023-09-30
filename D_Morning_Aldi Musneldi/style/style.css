@@ -1,0 +1,283 @@
+/* Font */
+@font-face {
+    font-family:Poppins ;
+    src: url(../font/Poppins/Poppins-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: #526D82;
+    color: #fff;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: #27374D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a{
+    font-size: 1.75rem;
+    color: #fff;
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.navbar a:hover, 
+.navbar a.active {
+    color: #0ef;
+}
+
+/* Home */
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img img{
+    width: 35vw;
+}
+
+.home-content h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
+.button{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: #0ef;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem #0ef;
+    font-size: 1.6rem;
+    color: #323946;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.button:hover{
+    box-shadow: none;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+/* Skill */
+
+.skill{
+    background: #323946;
+}
+
+.skill h2{
+    margin-bottom: 3rem;
+}
+
+.skill-container {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 2rem;
+}
+
+.skill-container .skill-box{
+    flex: 1 1 30rem;
+    background: #526D82;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid #323946;
+    transition: .5s ease;
+}
+
+.skill-container .skill-box:hover{
+    border-color: #0ef;
+    transform: scale(1.02);
+}
+
+.skill-box i{
+    font-size: 7rem;
+    color: #0ef;
+}
+
+.skill h3{
+    font-size: 2.3rem;
+}
+
+.skill p{
+    font-size: 1.3rem;
+    text-align: justify;
+    margin: 1rem 0 3rem;
+}
+
+/* About */
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.about-img img{
+    width: 35vw;
+    border-radius: 3%;
+}
+
+.about-content p{
+    font-size: 1.6rem;
+    margin: 1rem 0 1rem;
+    text-align: justify;
+}
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid #0ef;
+    border-radius: 50%;
+    color: #0ef;
+    margin: 3rem 1.5rem 3rem 0;
+}
+
+.social-media a:hover{
+    background: #0ef;
+    color: #323946;
+    box-shadow: 0 0 1rem #0ef;
+}
+
+.social-media i{
+    font-size: 1.8rem;
+    margin-bottom: -2rem;
+    display: flex;
+}
+
+/* Contact */
+
+.contact{
+    background: #323946;
+}
+.contact h2{
+margin-bottom: 3rem;
+}
+
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input, 
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background: #526D82;
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+.contact form .input-box input{
+    width: 49%;
+}
+
+.contact form textarea{
+    resize: none;
+}
+
+/* Footer */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: #1f242d;
+}
+
+.footer p{
+    font-size: 1.6rem;
+}
+
+.footer-iconTop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: #0ef;
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-iconTop a:hover{
+    box-shadow: 0 0 1rem #0ef;
+}
+
+.footer-iconTop a i{
+    font-size: 2.4rem;
+    color: #323946;
+}
